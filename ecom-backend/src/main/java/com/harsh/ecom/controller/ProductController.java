@@ -11,7 +11,7 @@ import java.util.List;
 @CrossOrigin(
         origins = {
                 "http://localhost:5173",
-                "https://ecom-weld-one.vercel.app/"
+                "https://ecom-weld-one.vercel.app"
         }
 )
 @RequestMapping("/api")

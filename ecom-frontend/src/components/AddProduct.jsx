@@ -2,6 +2,7 @@ import {useState,useEffect} from "react";
 import axios from "axios";
 function AddProduct()
 {
+    const API = import.meta.env.VITE_API_URL;
     const[product,setProduct] = useState({
         name : "",
         description: "",
@@ -23,7 +24,7 @@ function AddProduct()
         e.preventDefault();
 
 
-            axios.post("http://localhost:8080/api/products",{...product , price : Number(product.price), quantity: Number(product.quantity)})
+            axios.post(`${API}/api/products`,{...product , price : Number(product.price), quantity: Number(product.quantity)})
                 .then(res=>{console.log(res.data);
                     setProduct({
                         name: "",

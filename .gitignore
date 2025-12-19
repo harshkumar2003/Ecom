@@ -1,0 +1,11 @@
+# backend
+/ecom-backend/target
+/ecom-backend/.env
+
+# frontend
+/ecom-frontend/node_modules
+/ecom-frontend/.env
+
+# general
+*.log
+*/.idea
